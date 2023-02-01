@@ -1,12 +1,38 @@
-# pancreatic-cancer-subtypes-survival-linear-predictor
+# Pancreatic-cancer-subtypes-survival-linear-predictor
 Show that there is no significant relationship between cancer subtypes and our linear predictor of survival
 
 
 
 ## DATA
-4 sous types : 1squamous 2immunogenic 3progenitor 4ADEX
-Récupérer en interrogeant la base GDC du TCGA (type = paad)
-Fusion avec le prédicteur linéaire des modèles d’intérêt (8;9;10)
+- 4 subtypes : 1squamous 2immunogenic 3progenitor 4ADEX
+- Retrieve by querying the TCGA GDC database (type = paad)
+- Merge with the linear predictor of the models of interest (8)
 
-### Objectif : vérifier que les sous types de cancer sont indépendant du prédicteur linéaire continue (Anova) et dichotomiser sur Maxstat (Fisher) 
+### Objective: to verify that the cancer subtypes are independent of the linear predictor in continuous form (Anova) and dichotomized on Maxstat (Fisher)  
+
+## RESULTS
+The ANOVA test makes the following assumptions about the data:
+
+- Independence of observations. Each subject must belong to only one group. There is no relationship between the observations in each group. No repeated measures are allowed for the same participants.
+
+- No significant outliers in any cell of the design
+
+- Normality. The data in each cell of the design should be approximately normally distributed.
+
+- Homogeneity of variances. The variance of the response variable should be equal in each cell of the design.
+
+#### Groups vs cancer_subtypes
+![Image of aciduino on protoboard](https://github.com/dinaOuahbi/pancreatic-cancer-subtypes-survival-linear-predictor/blob/main/groups_subtypes.png)
+
+#### Linear predictor vs cancer subtypes _ some statistics 
+![Image of aciduino on protoboard](https://github.com/dinaOuahbi/pancreatic-cancer-subtypes-survival-linear-predictor/blob/main/linearPred_subtypes.png)
+
+#### Linear predictor vs cancer subtypes _ Normality
+![Image of aciduino on protoboard](https://github.com/dinaOuahbi/pancreatic-cancer-subtypes-survival-linear-predictor/blob/main/norm_hypo.png)
+
+#### Linear predictor vs cancer subtypes _ Homogeneity of variances
+![Image of aciduino on protoboard](https://github.com/dinaOuahbi/pancreatic-cancer-subtypes-survival-linear-predictor/blob/main/homoG_hypo.png)
+
+#### Linear predictor vs cancer subtypes _ welch ANOVA
+![Image of aciduino on protoboard](https://github.com/dinaOuahbi/pancreatic-cancer-subtypes-survival-linear-predictor/blob/main/welsh_anova.png)
 
