@@ -29,10 +29,21 @@ The ANOVA test makes the following assumptions about the data:
 
 #### Linear predictor vs cancer subtypes _ Normality
 ![Image of aciduino on protoboard](https://github.com/dinaOuahbi/pancreatic-cancer-subtypes-survival-linear-predictor/blob/main/norm_hypo.png)
+- p values (Shapiro test)
+  - 1 : 0.285
+  - 2 : 0.0000611
+  - 3 : 0.125
+  - 4 : 0.00511
 
 #### Linear predictor vs cancer subtypes _ Homogeneity of variances
 ![Image of aciduino on protoboard](https://github.com/dinaOuahbi/pancreatic-cancer-subtypes-survival-linear-predictor/blob/main/homoG_hypo.png)
+- Levene Test : 0.0450
 
 #### Linear predictor vs cancer subtypes _ welch ANOVA
 ![Image of aciduino on protoboard](https://github.com/dinaOuahbi/pancreatic-cancer-subtypes-survival-linear-predictor/blob/main/welsh_anova.png)
 
+
+
+
+
+##### thanks for following (OD)
