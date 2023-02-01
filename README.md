@@ -46,4 +46,4 @@ The ANOVA test makes the following assumptions about the data:
 
 
 
-##### thanks for following (OD)
+##### Thanks for following (OD)
